@@ -38,8 +38,8 @@ app.post('/prediction', image.handlePrediction);
 
 
 
-app.listen(3002, () => {
-    console.log('App is running on port 3002 \n');
+app.listen(process.env.PORT || 3002, () => {
+    console.log(`App is running on port ${ process.env.PORT || 3002 } \n`);
 });
 
 /*
